@@ -7,6 +7,9 @@ Rails.application.routes.draw do
 
  resources :ideas
 
+ get 'about' => 'static_pages#about'
+ get 'random' => 'static_pages#random'
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
