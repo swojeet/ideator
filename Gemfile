@@ -48,3 +48,5 @@ end
 gem 'bootstrap-sass', '~> 3.3.6'
 
 gem 'simple_form'
+
+gem 'will_paginate', '~> 3.0.6'
