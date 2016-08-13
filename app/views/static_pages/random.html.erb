@@ -1,8 +1,8 @@
 <% if @idea.present? %>
-	<%= link_to 'Inspire Me!', random_path,  class: 'btn btn-primary btn-block' %>
+	<%= link_to 'Inspire Me!', random_path,  class: 'btn btn-primary btn-block btn-lg', id: 'inspire_button' %>
 
 	<div class="panel panel-default">
-	  <div class="panel-body">
+	  <div class="panel-body" style="margin-top: 25px;">
 		<h3><%= @idea.description %></h3>
 		<h4 class="pull-right">by <%= @idea.author %></h4>
 		<br>

@@ -4,10 +4,11 @@
 <!-- Font Awesome -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 
-
+<link href='https://fonts.googleapis.com/css?family=Play' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
-  <title>Ideator</title>
+  <title>Ideator | Sharing ideas to inspire people</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -25,7 +26,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">Ideator</a>
+        <%= link_to 'Ideator', root_path, class: 'navbar-brand' %>
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
@@ -62,7 +63,7 @@
           <a href="https://www.google.com.np/maps/place/Custom+R+Us/@27.7101719,85.3070877,15z/data=!4m5!3m4!1s0x0:0x8dea330f4fffb85f!8m2!3d27.7101719!4d85.3070877"> Google Map</a>
         </div>
         <div class="col-xs-12 col-md-4">
-          <h3>© Custom R Us </h3>
+          <h3>©Custom R Us </h3>
           <p>All rights reserved</p>
         </div>
       </div>

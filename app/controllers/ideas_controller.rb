@@ -1,6 +1,7 @@
 class IdeasController < ApplicationController
 	def index
-		@ideas= Idea.order("created_at DESC").paginate(:page => params[:page], :per_page => 1)
+		@ideas=Idea.all
+		@ideas= Idea.order("created_at DESC").paginate(:page => params[:page], :per_page => 5)
 	end
 
 	def create
@@ -14,7 +15,7 @@ class IdeasController < ApplicationController
 
 	def update
 		@idea = Idea.find(params[:id])
-		if @idea.update(idea_params)
+		if @idea.update(ideas_params)
 			redirect_to root_path
 		else
 			redirect_to edit_idea_path(params[:id])
